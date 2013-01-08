@@ -14,7 +14,7 @@ unregister_sidebar( 'sidebar-alt' );
 /** Add the top nav section */
 add_action( 'genesis_before', 'bg_topnav' );
 function bg_topnav() {
-	echo '<div id="topnav"><div class="wrap"><span class="left"><span class="from-the-blog">From the Blog:</span><a href="http://www.briangardner.com/responsive-web-design/">Responsive Web Design</a></span><span class="right"><a class="first" href="http://www.briangardner.com/about/">The 411 on Me</a><a href="http://www.briangardner.com/code/">Code Snippets</a><a href="http://www.briangardner.com/themes/">WordPress Themes</a></span></div></div>';
+	echo '<div id="topnav"><div class="wrap"><span class="left"><span class="from-the-blog">Like this theme?</span><a href="https://github.com/bgardner/avalanche">You can fork it on Github.</a></span><span class="right"><a class="first" href="http://www.briangardner.com/about/">The 411 on Me</a><a href="http://www.briangardner.com/code/">Code Snippets</a><a href="http://www.briangardner.com/themes/">WordPress Themes</a></span></div></div>';
 }
 
 /** Customize the post info function */
