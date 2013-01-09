@@ -56,7 +56,7 @@ function bg_code() { ?>
 		
 			<ul>
 				<li><a href="http://www.briangardner.com/code/load-custom-favicon/">Load Custom Favicon</a></li>
-				<li><a href="http://www.briangardner.com/code/load-custom-styles-heet/">Load Custom Style Sheet</a></li>
+				<li><a href="http://www.briangardner.com/code/load-custom-style-sheet/">Load Custom Style Sheet</a></li>
 				<li><a href="http://www.briangardner.com/code/load-google-fonts/">Load Google Fonts</a></li>
 				<li><a href="http://www.briangardner.com/code/modify-gravatar-size/">Modify Gravatar Size</a></li>
 				<li><a href="http://www.briangardner.com/code/register-default-layout-setting/">Register Default Layout Setting</a></li>

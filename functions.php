@@ -49,7 +49,12 @@ add_filter( 'the_content', 'sharedaddy_sharing_at_bottom', 19 );
 add_filter( 'the_excerpt', 'sharedaddy_sharing_at_bottom', 19 );
 
 function sharedaddy_sharing_at_bottom( $content = '' ) {
-	return sharing_display() . $content;
+	if ( function_exists( 'sharing_display' ) ) {
+		return sharing_display() . $content;
+	}
+	else {
+		return $content;
+	}
 }
 
 /** Modify comments header text in comments */
