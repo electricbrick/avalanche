@@ -1,11 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo);
-@import url(http://fonts.googleapis.com/css?family=Cuprum);
-@import url(http://fonts.googleapis.com/css?family=Junge);
-@import url(http://fonts.googleapis.com/css?family=Lora);
-@import url(http://fonts.googleapis.com/css?family=Merriweather);
-@import url(http://fonts.googleapis.com/css?family=News+Cycle);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Arvo|Cuprum|Junge|Lora|Merriweather|News+Cycle|PT+Sans|Ubuntu);
 
 p.junge {
 	font-family: 'Junge', serif;

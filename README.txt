@@ -13,6 +13,11 @@ Host the backstretch.js file found in the js folder on your server, and use code
 Just a note to mention that I am currently using the Jetpack plugin for my social sharing icons. I have built a function (lines 44-53 in functions.php) which appends them to both the top and bottom of the post. If you do not have Jetpack acitvated, this might throw an error on each post. Simply remove the aforementioned code and you should be good to go.
 
 
+=== Sidebar Social Media Buttons ===
+
+If you want to add social media buttons like I have on my site, simply use a text widget and apply the class="social-buttons" to your links.  They would look like this: <a class="social-buttons" href="...
+
+
 === Developer Info ===
 
 Name: Brian Gardner
