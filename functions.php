@@ -8,13 +8,19 @@ function bg_viewport_meta_tag() {
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
 }
 
+// Load Oswald Google font
+add_action( 'wp_enqueue_scripts', 'bg_load_google_font' );
+function bg_load_google_font() {
+	wp_enqueue_style( 'google-font', 'http://fonts.googleapis.com/css?family=Oswald:400', array(), PARENT_THEME_VERSION );
+}
+
 // Unregister secondary sidebar
 unregister_sidebar( 'sidebar-alt' );
 
 // Add the topnav section
 add_action( 'genesis_before', 'bg_topnav' );
 function bg_topnav() {
-	echo '<div id="topnav"><div class="wrap"><span class="left"><span class="from-the-blog">Like this theme?</span><a href="https://github.com/bgardner/avalanche">You can fork it on Github.</a></span><span class="right"><a class="first" href="http://www.briangardner.com/about/">The 411 on Me</a><a href="http://www.briangardner.com/code/">Code Snippets</a><a href="http://www.briangardner.com/themes/">WordPress Themes</a></span></div></div>';
+	echo '<div id="topnav"><div class="wrap"><span class="left"><span class="from-the-blog">Like this theme?</span><a href="https://github.com/bgardner/avalanche">You can fork it on GitHub.</a></span><span class="right"><a class="first" href="http://www.briangardner.com/about/">The 411 on Me</a><a href="http://www.briangardner.com/code/">Code Snippets</a><a href="http://www.briangardner.com/themes/">WordPress Themes</a></span></div></div>';
 }
 
 // Customize the post info function
@@ -41,14 +47,14 @@ function custom_read_more_link() {
 // Remove the post meta function
 remove_action( 'genesis_after_post_content', 'genesis_post_meta' );
 
-// Add sharing icons to the top of content
+// Add sharing buttons to the top of post content
 remove_filter( 'the_content', 'sharing_display', 19 );
 remove_filter( 'the_excerpt', 'sharing_display', 19 );
 
-add_filter( 'the_content', 'sharedaddy_sharing_at_bottom', 19 );
-add_filter( 'the_excerpt', 'sharedaddy_sharing_at_bottom', 19 );
+add_filter( 'the_content', 'share_buttons_above_post', 19 );
+add_filter( 'the_excerpt', 'share_buttons_above_post', 19 );
 
-function sharedaddy_sharing_at_bottom( $content = '' ) {
+function share_buttons_above_post( $content = '' ) {
 	if ( function_exists( 'sharing_display' ) ) {
 		return sharing_display() . $content;
 	}
@@ -73,7 +79,7 @@ function custom_comment_form_args($args) {
 
 // Create a custom Gravatar
 function add_custom_gravatar ($avatar) {
-$custom_avatar = get_bloginfo('template_directory') . '/images/gravatar-bg.png';
+$custom_avatar = get_bloginfo( 'template_directory' ) . '/images/gravatar-bg.png';
 $avatar[$custom_avatar] = "Custom Gravatar";
 	return $avatar;
 	}

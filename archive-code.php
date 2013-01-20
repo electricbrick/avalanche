@@ -32,11 +32,14 @@ function bg_code() { ?>
 		<div class="split-column-1">
 		
 			<ul>
+				<li><a href="http://www.briangardner.com/code/add-after-post-widget/">Add After Post Widget</a></li>
 				<li><a href="http://www.briangardner.com/code/add-body-class/">Add Body Class</a></li>
 				<li><a href="http://www.briangardner.com/code/add-featured-images/">Add Featured Images</a></li>
 				<li><a href="http://www.briangardner.com/code/add-footer-widgets/">Add Footer Widgets</a></li>
+				<li><a href="http://www.briangardner.com/code/add-share-buttons-above-post/">Add Jetpack Share Buttons Above Post</a></li>
 				<li><a href="http://www.briangardner.com/code/add-mobile-meta-tag/">Add Meta Tag for Mobile Browsers</a></li>
 				<li><a href="http://www.briangardner.com/code/add-post-formats/">Add Post Formats</a></li>
+				<li><a href="http://www.briangardner.com/code/add-span-class-widget-titles/">Add Span Class to Widget Titles</a></li>
 				<li><a href="http://www.briangardner.com/code/add-structural-wraps/">Add Structural Wraps</a></li>
 				<li><a href="http://www.briangardner.com/code/admin-management/">Admin Management</a></li>
 				<li><a href="http://www.briangardner.com/code/create-color-style-options/">Create Color Style Options</a></li>
@@ -47,7 +50,6 @@ function bg_code() { ?>
 				<li><a href="http://www.briangardner.com/code/customize-post-meta/">Customize Post Meta</a></li>
 				<li><a href="http://www.briangardner.com/code/customize-post-navigation/">Customize Post Navigation</a></li>
 				<li><a href="http://www.briangardner.com/code/customize-search-form/">Customize Search Form</a></li>
-				<li><a href="http://www.briangardner.com/code/force-layout-setting/">Force Layout Setting</a></li>
 			</ul>
 			
 		</div><!-- end .split-column-1-->
@@ -55,6 +57,7 @@ function bg_code() { ?>
 		<div class="split-column-2">
 		
 			<ul>
+				<li><a href="http://www.briangardner.com/code/force-layout-setting/">Force Layout Setting</a></li>
 				<li><a href="http://www.briangardner.com/code/load-custom-favicon/">Load Custom Favicon</a></li>
 				<li><a href="http://www.briangardner.com/code/load-custom-style-sheet/">Load Custom Style Sheet</a></li>
 				<li><a href="http://www.briangardner.com/code/load-google-fonts/">Load Google Fonts</a></li>
@@ -80,7 +83,7 @@ function bg_code() { ?>
 		<p class="bold">Below is a list of code snippets for WordPress:</p>
 		
 			<ul>
-				<li><a href="http://www.briangardner.com/code/unregister-wordpress-widgets/">Unregister Default WordPress Widgets</a></li>
+				<li><a href="http://www.briangardner.com/code/remove-wordpress-widgets/">Remove Default WordPress Widgets</a></li>
 			</ul>
 
 																											
