@@ -38,6 +38,7 @@ h4.merriweather {
 h4.oswald {
 	font-family: 'Oswald', sans-serif;
 	font-size: 24px;
+	font-weight: 400;
 }
 
 h4.ubuntu {

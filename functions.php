@@ -47,7 +47,7 @@ function custom_read_more_link() {
 // Remove the post meta function
 remove_action( 'genesis_after_post_content', 'genesis_post_meta' );
 
-// Add sharing buttons to the top of post content
+// Add Jetpack share buttons above post
 remove_filter( 'the_content', 'sharing_display', 19 );
 remove_filter( 'the_excerpt', 'sharing_display', 19 );
 
