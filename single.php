@@ -1,6 +1,6 @@
 <?php
 
-// Load Google styles heet to header
+// Load Google style sheet to header
 add_action( 'wp_enqueue_scripts', 'bg_google_style_sheet' );
 function bg_google_style_sheet() {
 	if ( is_single( '2942' ) ) {
