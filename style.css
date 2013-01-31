@@ -104,6 +104,8 @@ code {
 Font Color
 ---------------------------------------------------------------------------------------------------- */
 
+.enews-widget p,
+.enews-widget .widgettitle,
 .post-info .post-comments a,
 .post-info .post-comments a:visited,
 #footer,
@@ -210,6 +212,11 @@ a.social-buttons,
 #footer,
 #newsletter {
 	text-align: center;
+}
+
+.enews-widget .widgettitle,
+.enews-widget .widget-headline {
+	text-align: left;
 }
 
 a.social-buttons,
@@ -682,6 +689,12 @@ h4 {
 	line-height: 1;
 }
 
+.enews-widget .sidebar-title,
+.enews-widget .widgettitle {
+	background: none;
+	padding: 0;
+}
+
 .comments-title {
 	padding: 0 12px;
 	padding: 0 0.75rem;
@@ -877,9 +890,15 @@ Sidebar
 }
 
 .sidebar .widget {
-	margin-bottom: 48px;
-	margin-bottom: 3rem;
+	margin-bottom: 32px;
+	margin-bottom: 2rem;
 	overflow: hidden;
+}
+
+.enews-widget {
+	background-color: #333;
+	padding: 28px 32px 32px;
+	padding: 1.75rem 2rem 2rem;
 }
 
 .widget-area ul li {
@@ -894,6 +913,11 @@ Sidebar
 	margin-bottom: 8px;
 	margin-bottom: 0.5rem;
 	width: 50%;
+}
+
+#text-14 {
+	margin-bottom: 32px;
+	margin-bottom: 2rem;
 }
 
 a.social-buttons {
@@ -971,6 +995,29 @@ input:hover[type="button"],
 input:hover[type="submit"] {
 	background-color: #f96e5b;
 	border: 1px solid #f96e5b;
+}
+
+.enews-widget input {
+	background-color: #fff;
+	box-shadow: none;
+	margin-bottom: 8px;
+	margin-bottom: 0.75rem;
+}
+
+.enews-widget input[type="submit"] {
+	background-color: #f96e5b;
+	border: 1px solid #f96e5b;
+	display: block;
+	margin: 0 auto;
+	padding: 16px;
+	padding: 1rem;
+	width: 100%;
+}
+
+.sidebar .enews-widget input:hover[type="submit"] {
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: #222;
 }
 
 .search-form input[type="submit"] {
