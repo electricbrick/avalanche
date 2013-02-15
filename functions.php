@@ -8,6 +8,26 @@ function bg_viewport_meta_tag() {
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
 }
 
+// Filter open graph tags to use Genesis doctitle and meta description instead
+add_filter( 'jetpack_open_graph_tags', 'bg_jetpack_open_graph_tags_filter' );
+function bg_jetpack_open_graph_tags_filter( $tags ) {
+
+	// Do nothing if not on an entry page
+	if ( ! is_singular() )
+		return $tags;
+
+	// Pull from custom fields
+	$title				= genesis_get_custom_field( '_genesis_title' );
+	$description	= genesis_get_custom_field( '_genesis_description' );
+
+	// Maybe set new values
+	$tags['og:title']				= $title ? $title : $tags['og:title'];
+	$tags['og:description']	= $description ? $description : $tags['og:description'];
+
+	return $tags;
+
+}
+
 // Load Oswald Google font
 add_action( 'wp_enqueue_scripts', 'bg_load_google_font' );
 function bg_load_google_font() {
@@ -110,7 +130,6 @@ function code_post_type() {
 	);
 }
 
-
 // Add span class to widget headline
 add_filter( 'widget_title', 'child_widget_title' );
 function child_widget_title( $title ){
@@ -125,7 +144,8 @@ remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 add_action( 'genesis_after', 'bg_footer' );
 	function bg_footer() { ?>
 	<div id="footer"><div class="wrap">
-		<p>&copy; Copyright 2012. Powered by <a href="http://www.starbucks.com">Starbucks lattes</a>, <a href="http://www.sarahmclachlan.com">really good music</a> and the <a href="http://www.studiopress.com/">Genesis Framework</a>. <a href="http://www.briangardner.com/contact/">Get in touch.</a></p>
+		<p>&copy; Copyright 2013. Powered by <a href="http://www.starbucks.com">Starbucks lattes</a>, <a href="http://www.sarahmclachlan.com">really good music</a> and the <a href="http://www.studiopress.com/">Genesis Framework</a>. <a href="http://www.briangardner.com/contact/">Get in touch</a>.</p>
+		<p class="social-links"><a class="social" href="http://www.facebook.com/bgardner">Facebook</a>/<a class="social" href="http://github.com/bgardner">Github</a>/<a class="social" href="https://plus.google.com/109450535379570250650?rel=author">Google +</a>/<a class="social" href="http://instagram.com/bgardner/">Instagram</a>/<a class="social" href="http://pinterest.com/bgdotcom/">Pinterest</a>/<a class="social" href="http://twitter.com/bgardner">Twitter</a></p>
 	</div></div>
 	<?php
 }

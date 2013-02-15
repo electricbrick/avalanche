@@ -14,9 +14,9 @@ add_action( 'genesis_loop', 'bg_code' );
 function bg_code() { ?>
 
 	<h1 class="entry-title">Code Snippets</h1> 
-	
+
 	<div class="entry-content">
-	
+
 		<p>From time to time I find myself looking for code that I can use when building themes. I'm guessing you have the same problem, so feel free to use what you see.</p>
 
 		<p class="bold">Below is a list of resources for the Genesis Framework:</p>
@@ -26,11 +26,17 @@ function bg_code() { ?>
 			<li><a href="http://www.briangardner.com/code/functions-best-practices/">Functions Best Practices</a></li>
 			<li><a href="http://www.briangardner.com/code/genesis-hook-reference/">Genesis Hook Reference</a></li>
 		</ul>
-		
+
+		<p class="bold">Below is a list of CSS code snippets for the Genesis Framework:</p>
+
+		<ul>
+			<li><a href="http://www.briangardner.com/code/add-content-boxes/">Content Boxes</a></li>
+		</ul>
+
 		<p class="bold">Below is a list of code snippets for the Genesis Framework:</p>
-			
+
 		<div class="split-column-1">
-		
+
 			<ul>
 				<li><a href="http://www.briangardner.com/code/add-after-post-widget/">Add After Post Widget</a></li>
 				<li><a href="http://www.briangardner.com/code/add-body-class/">Add Body Class</a></li>
@@ -51,11 +57,11 @@ function bg_code() { ?>
 				<li><a href="http://www.briangardner.com/code/customize-post-navigation/">Customize Post Navigation</a></li>
 				<li><a href="http://www.briangardner.com/code/customize-search-form/">Customize Search Form</a></li>
 			</ul>
-			
+
 		</div><!-- end .split-column-1-->
-		
+
 		<div class="split-column-2">
-		
+
 			<ul>
 				<li><a href="http://www.briangardner.com/code/force-layout-setting/">Force Layout Setting</a></li>
 				<li><a href="http://www.briangardner.com/code/load-custom-favicon/">Load Custom Favicon</a></li>
@@ -75,17 +81,16 @@ function bg_code() { ?>
 				<li><a href="http://www.briangardner.com/code/unregister-sidebars/">Unregister Sidebars</a></li>
 				<li><a href="http://www.briangardner.com/code/unregister-superfish-scripts/">Unregister Superfish Scripts</a></li>
 			</ul>
-			
+
 		</div><!-- end .split-column-2-->
-		
+
 		<div class="clear"></div>
-		
+
 		<p class="bold">Below is a list of code snippets for WordPress:</p>
-		
+
 			<ul>
 				<li><a href="http://www.briangardner.com/code/remove-wordpress-widgets/">Remove Default WordPress Widgets</a></li>
 			</ul>
-
 																											
 	</div><!-- end .entry-content -->
 

@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400|Bitter:400|Crimson+Text:400|Droid+Serif:400|Kreon:400|Lora:400|Merriweather:400|PT+Seri:400f|Rokkitt:400|Vollkorn:400);
+
+p.arvo,
+h4.arvo {
+	font-family: 'Arvo', serif;
+}
+
+p.bitter,
+h4.bitter {
+	font-family: 'Bitter', serif;
+}
+
+p.crimson-text,
+h4.crimson-text {
+	font-family: 'Crimson Text', serif;
+}
+
+p.droid-serif,
+h4.droid-serif {
+	font-family: 'Droid Serif', serif;
+}
+
+p.kreon,
+h4.kreon {
+	font-family: 'Kreon', serif;
+}
+
+p.lora,
+h4.lora {
+	font-family: 'Lora', serif;
+}
+
+p.merriweather,
+h4.merriweather {
+	font-family: 'Merriweather', serif;
+}
+
+p.pt-serif,
+h4.pt-serif {
+	font-family: 'PT Serif', serif;
+}
+
+p.rokkitt,
+h4.rokkitt {
+	font-family: 'Rokkitt', serif;
+}
+
+p.vollkorn,
+h4.vollkorn {
+	font-family: 'Vollkorn', serif;
+}
+
+p.arvo,
+p.bitter,
+p.cantana-one,
+p.droid-serif,
+p.kreon,
+p.lora,
+p.merriweather,
+p.pt-serif,
+p.rokkitt,
+p.vollkorn {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+h4.arvo,
+h4.bitter,
+h4.cantana-one,
+h4.droid-serif,
+h4.kreon,
+h4.lora,
+h4.merriweather,
+h4.pt-serif,
+h4.rokkitt,
+h4.vollkorn {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 400;
+}

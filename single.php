@@ -1,10 +1,26 @@
 <?php
 
+// Remove comments from tutorials category
+add_action( 'wp_enqueue_scripts', 'bg_tutorials_remove_comments' );
+function bg_tutorials_remove_comments() {
+	if ( in_category( '51' ) ) {
+		remove_action( 'genesis_after_post', 'genesis_get_comments_template' );
+	}
+}
+
 // Load Google style sheet to header
 add_action( 'wp_enqueue_scripts', 'bg_google_style_sheet' );
 function bg_google_style_sheet() {
 	if ( is_single( '2942' ) ) {
 		wp_enqueue_style( 'google-stylesheet', CHILD_URL . '/css/google.css', array(), PARENT_THEME_VERSION );
+	}
+}
+
+// Load Google Serif style sheet to header
+add_action( 'wp_enqueue_scripts', 'bg_google_serif_style_sheet' );
+function bg_google_serif_style_sheet() {
+	if ( is_single( '6522' ) ) {
+		wp_enqueue_style( 'google-serif-fonts', CHILD_URL . '/css/google-serif.css', array(), PARENT_THEME_VERSION );
 	}
 }
 

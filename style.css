@@ -104,6 +104,9 @@ code {
 Font Color
 ---------------------------------------------------------------------------------------------------- */
 
+a.social-buttons,
+a.social-buttons:hover,
+a.social-buttons:visited,
 .enews-widget p,
 .enews-widget .widgettitle,
 .post-info .post-comments a,
@@ -176,6 +179,11 @@ Font Sizes
 	font-size: 0.75rem;
 }
 
+a.social-buttons {
+	font-size: 10px;
+	font-size: 0.625rem;
+}
+
 
 /*
 Font Weights
@@ -185,6 +193,7 @@ body {
 	font-weight: 300;
 }
 
+span.semi-bold,
 .sidebar .widgettitle,
 #comments h3,
 #newsletter h4,
@@ -309,7 +318,7 @@ Topnav
 }
 
 span.left {
-	float: left:
+	float: left;
 }
 
 span.right {
@@ -555,7 +564,8 @@ Post Info
 	line-height: 1.5;
 }
 
-.post-info {
+.post-info,
+.single .category-tutorials .post-info {
 	margin-bottom: 32px;
 	margin-bottom: 2rem;
 }
@@ -572,6 +582,10 @@ Post Info
 	margin-top: -0.5rem;
 	padding: 8px 16px;
 	padding: 0.5rem 1rem;
+}
+
+.category-tutorials .post-comments {
+	display: none;
 }
 
 .single .post-comments a,
@@ -777,6 +791,11 @@ Newsletter
 	padding: 1.5rem;
 }
 
+.category-tutorials #newsletter {
+	margin: 32px 0 0;
+	margin: 2rem 0 0;
+}
+
 .newsletter-wrap {
 	background-color: #fff;
 	overflow: hidden;
@@ -908,7 +927,7 @@ Sidebar
 	word-wrap: break-word;
 }
 
-#nav_menu-5 ul li {
+#nav_menu-2 ul li {
 	float: left;
 	margin-bottom: 8px;
 	margin-bottom: 0.5rem;
@@ -923,10 +942,7 @@ Sidebar
 a.social-buttons {
 	background-color: #333;
 	border-right: 1px solid #fff;
-	color: #fff;
 	float: left;
-	font-size: 10px;
-	font-size: 0.625rem;
 	overflow: hidden;
 	padding: 8px 0;
 	padding: 0.5rem;
